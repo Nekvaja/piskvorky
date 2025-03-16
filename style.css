@@ -60,6 +60,7 @@ body {
     background-color: #1fcca4;
     border: 0;
     height: 3rem;
+    
 }
 
 .piskvorky__btn-zacit-hrat {
@@ -68,4 +69,14 @@ body {
     height: 3rem;
     position: relative;
     top: 0.06rem;
+}
+
+.piskvorky__btn-pravidla:hover {
+    background-color: #1cbb96;
+    cursor: pointer;
+}
+
+.piskvorky__btn-zacit-hrat:hover {
+    background-color: #0090e9;
+    cursor: pointer;
 }
