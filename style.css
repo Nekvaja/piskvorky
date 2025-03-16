@@ -1,0 +1,15 @@
+.piskvorky {
+    display: flex;
+    flex-direction: column;
+    padding: 25%;
+}
+
+.piskvorky__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.piskvorky__hraci-plocha {
+    order: -1;
+}
+
