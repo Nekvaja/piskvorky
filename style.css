@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     color: #ffffff;
     background-color: #283e50;
-    max-width: 360px;
+    max-width: 400px;
     box-sizing: border-box;
     width: 90%;
 
@@ -40,8 +40,8 @@ body {
     text-align: center;
     padding: 2rem 0;
     margin: 0 1rem;
-    line-height: 1.5;
-    font-size: 1.15rem;
+    line-height: 1.4;
+    font-size: 1.2rem;
   
 }
 
@@ -67,5 +67,5 @@ body {
     border: 0;
     height: 3rem;
     position: relative;
-    top: 0.1em;
+    top: 0.06rem;
 }
