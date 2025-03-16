@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     margin: 25%;
     color: #ffffff;
+    max-width: 360px;
+    background-color: #283e50;
 
 }
 
@@ -37,12 +39,27 @@ body {
   
 }
 
-.piskvorky__game-intro {
-    display: flex;
-    flex-direction: column;
-    background-color: #283e50;
-}
 
-.piskvorky__hraci-plocha {
+.piskvorky__picture {
     order: -1;
 } 
+
+.piskvorky__footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.piskvorky__btn-pravidla {
+    background-color: #1fcca4;
+    border: 0;
+    height: 3rem;
+}
+
+.piskvorky__btn-zacit-hrat {
+    background-color: #0197f6;
+    border: 0;
+    height: 3rem;
+    position: relative;
+    top: 0.1em;
+}
