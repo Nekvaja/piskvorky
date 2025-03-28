@@ -18,6 +18,7 @@ body {
     max-width: 400px;
     box-sizing: border-box;
     width: 90%;
+    border-radius: 2% 2% 0 0;
 
 }
 
@@ -30,7 +31,7 @@ body {
     text-align: center;
     margin: 0;
     padding-top: 2rem;
-    font-family: "Lobster", sans-serif;
+    font-family: "Lobster";
     font-weight: 400;
     font-style:normal;
     font-size: 3rem;
@@ -38,16 +39,18 @@ body {
 
 .piskvorky__description {
     text-align: center;
+    font-family: sans-serif;
     padding: 2rem 0;
     margin: 0 1rem;
-    line-height: 1.4;
-    font-size: 1.2rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
   
 }
 
 
 .piskvorky__picture {
     order: -1;
+    border-radius: 2% 2% 0 0;
 } 
 
 .piskvorky__footer a {
@@ -56,7 +59,33 @@ body {
     font-size: 1.1rem;
 }
 
+.piskvorky__btn {
+    border: 0;
+    height: 3rem;
+}
 
+.btn--pravidla {
+    background-color: #1fcca4;
+    }
+
+.btn--hrat {
+    background-color: #0197f6;
+    position: relative;
+    top: 0.06rem;
+
+}
+
+.btn--pravidla:hover {
+    background-color: #1cbb96;
+    cursor: pointer;
+}
+
+.btn--hrat:hover {
+    background-color: #0090e9;
+    cursor: pointer;
+}
+
+/*
 .piskvorky__btn-pravidla {
     background-color: #1fcca4;
     border: 0;
@@ -72,12 +101,13 @@ body {
     top: 0.06rem;
 }
 
-.piskvorky__btn-pravidla:hover {
+.btn--green:hover {
     background-color: #1cbb96;
     cursor: pointer;
 }
 
-.piskvorky__btn-zacit-hrat:hover {
+.btn--blue:hover {
     background-color: #0090e9;
     cursor: pointer;
 }
+*/
