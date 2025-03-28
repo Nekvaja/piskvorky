@@ -85,29 +85,3 @@ body {
     cursor: pointer;
 }
 
-/*
-.piskvorky__btn-pravidla {
-    background-color: #1fcca4;
-    border: 0;
-    height: 3rem;
-    
-}
-
-.piskvorky__btn-zacit-hrat {
-    background-color: #0197f6;
-    border: 0;
-    height: 3rem;
-    position: relative;
-    top: 0.06rem;
-}
-
-.btn--green:hover {
-    background-color: #1cbb96;
-    cursor: pointer;
-}
-
-.btn--blue:hover {
-    background-color: #0090e9;
-    cursor: pointer;
-}
-*/
