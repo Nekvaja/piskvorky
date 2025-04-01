@@ -85,3 +85,8 @@ body {
     cursor: pointer;
 }
 
+/* ----------- Hrací pole --------- */
+
+.piskvorky__hra {
+    color: #ffffff;
+}
