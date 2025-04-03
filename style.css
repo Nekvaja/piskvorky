@@ -85,7 +85,7 @@ body {
     cursor: pointer;
 }
 
-/* ----------- Hrací pole --------- */
+/* ----------- Hra --------- */
 
 .piskvorky__hra {
     color: #ffffff;
@@ -127,7 +127,7 @@ body {
 }
 
 .hrac__znak {
-    border: 2.5px, solid, white;
+    border: 2.5px solid white;
     border-radius: 50%;
     width: 1.2rem;
     height: 1.2rem;
