@@ -9,24 +9,27 @@
 </head>
 <body>
     <main class = "piskvorky__hra">
-      <h1 class="piskvorky__title">Piškvorky</h1>
+      <h1 class="piskvorky__title hra__title">Piškvorky</h1>
 
       <div class = "hra__hlavni-panel">
+        
         <div class="hra__hrac">
            <p>Hraje:</p>
-           <img class="circle" src="circle.svg" alt="circle">
-        </div>  
-        
+           <div class = "hrac__znak"> </div>
+        </div>
+
         <div class="hra__menu">
-            <a href="index.html"> 
-                <img class = "home" src="home.svg" alt="home">
+             <a href="index.html" class="btn btn--home"> 
+                <img class = "img__home" src="home.svg" alt="home">
             </a>
 
-            <a href="hra.html">
-                 <img class = "cross" src="restart.svg" alt="restart">
+            <a href="hra.html" class="btn btn--restart">
+                <img class = "img__restart" src="restart.svg" alt="restart">
             </a>
         </div>
-         
+
+      </div>  
+                 
         <div class = "hraci-pole">
             <button></button>
             <button></button>
@@ -130,8 +133,6 @@
             <button></button>
 
         </div>
- 
-    </div>
 
     </main>
 </body>
