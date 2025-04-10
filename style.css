@@ -85,7 +85,7 @@ body {
     cursor: pointer;
 }
 
-/* ----------- Hra --------- */
+/* ----------- 2. Hra --------- */
 
 .piskvorky__hra {
     color: #ffffff;
@@ -184,3 +184,19 @@ background-color: #0090e9;
     filter: brightness(1.1);
 }
 
+/* ----------------3. Hrací pole -------------*/
+
+.board__field--circle {
+    background-image: url(circle_black.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+
+}
+
+.board__field--cross {
+    background-image: url(cross_black.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
