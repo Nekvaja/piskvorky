@@ -131,7 +131,7 @@ body {
     border-radius: 50%;
     width: 1.2rem;
     height: 1.2rem;
-}
+} 
 
 .hra__hrac p {
     margin-right: 0.5rem;
@@ -199,4 +199,24 @@ background-color: #0090e9;
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
+}
+
+.hrac__znak--cross {
+    border: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-image: url(cross.svg);
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
+    background-position: center;    
+}
+
+.hrac__znak--circle {
+    border: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-image: url(circle.svg);
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
+    background-position: center;    
 }
