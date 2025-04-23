@@ -66,12 +66,18 @@ body {
 
 .btn--pravidla {
     background-color: #1fcca4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 .btn--hrat {
     background-color: #0197f6;
     position: relative;
     top: 0.06rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
