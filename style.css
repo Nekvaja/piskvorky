@@ -188,7 +188,7 @@ background-color: #0090e9;
 /* ----------------3. Hrací pole -------------*/
 
 .board__field--circle {
-    background-image: url(circle_black.svg);
+    background-image: url(img/circle_black.svg);
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
@@ -196,7 +196,7 @@ background-color: #0090e9;
 
 
 .board__field--cross {
-    background-image: url(cross_black.svg);
+    background-image: url(img/cross_black.svg);
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
@@ -206,7 +206,7 @@ background-color: #0090e9;
     border: none;
     width: 1.8rem;
     height: 1.8rem;
-    background-image: url(cross.svg);
+    background-image: url(img/cross.svg);
     background-repeat: no-repeat;
     background-size: 1.6rem;
     background-position: center;    
@@ -216,7 +216,7 @@ background-color: #0090e9;
     border: none;
     width: 1.8rem;
     height: 1.8rem;
-    background-image: url(circle.svg);
+    background-image: url(img/circle.svg);
     background-repeat: no-repeat;
     background-size: 1.6rem;
     background-position: center;    
