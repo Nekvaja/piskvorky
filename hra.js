@@ -1,3 +1,5 @@
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4'
+
 let currentPlayer = 'circle';
 
 const buttonsElement = document.querySelectorAll("button");
@@ -19,7 +21,39 @@ const tah = (event) => {
         naTahuElement.classList.remove("hrac__znak--cross")
         naTahuElement.classList.add("hrac__znak--circle")
     }
+
+ // Úkol 4 - vítěz ---------------
+
+const herniPole = Array.from(buttonsElement, (button) => {
+    if (button.classList.contains("board__field--circle")) {
+        return 'o';
+    } else if (button.classList.contains("board__field--cross")) {
+        return 'x';
+    } else {
+        return '_';
+    }
+
+});
+
+console.log(herniPole)
+
+const vitez = findWinner(herniPole);
+
+
+if (vitez === 'o' || vitez === 'x' || vitez === 'tie') {
+    const vyhlaseniViteze = () => {
+        vitez === 'tie' 
+        ? alert(`Hra skončila nerozhodně.`)
+        : alert(`Vyhrál hráč se symbolem ${vitez}`)
+        location.reload();
+    };
+
+       
+    setTimeout(vyhlaseniViteze, 500);
 }
+}
+
+// výše úkol 4 ---------------
 
 buttonsElement.forEach((tlacitko) => {
 tlacitko.addEventListener("click", tah)
@@ -33,7 +67,4 @@ const zacitZnovu = (event) => {
 }
 
 
-btnRestartElement.addEventListener("click", zacitZnovu)
-
-
-
+btnRestartElement.addEventListener("click", zacitZnovu);
