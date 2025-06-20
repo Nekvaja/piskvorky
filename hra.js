@@ -6,7 +6,7 @@ const buttonsElement = document.querySelectorAll("button");
 const naTahuElement = document.querySelector(".hrac__znak");
 const btnRestartElement = document.querySelector(".btn--restart")
 
-const tah = (event) => {
+const tah = async (event) => {
     
     if (currentPlayer === "circle") {
         event.target.classList.add("board__field--circle")
@@ -37,6 +37,7 @@ const herniPole = Array.from(buttonsElement, (button) => {
 
 console.log(herniPole)
 
+
 const vitez = findWinner(herniPole);
 
 
@@ -51,9 +52,34 @@ if (vitez === 'o' || vitez === 'x' || vitez === 'tie') {
        
     setTimeout(vyhlaseniViteze, 500);
 }
+// výše úkol 4 ---------------
+
+if ((vitez === null) && (currentPlayer === "cross")) {
+    const response = await fetch('https://piskvorky.czechitas-podklady.cz/api/suggest-next-move', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    board: herniPole,
+    player: 'x'
+  }),
+});
+    const data = await response.json()
+    console.log(data)
+    const {x, y} = data.position;
+    const index = x + y * 10
+    const fieldButton = buttonsElement[index]
+    fieldButton.click()
+};
+
 }
 
-// výše úkol 4 ---------------
+
+
+
+
+
 
 buttonsElement.forEach((tlacitko) => {
 tlacitko.addEventListener("click", tah)
